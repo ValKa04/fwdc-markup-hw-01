@@ -95,15 +95,14 @@ ul {
   text-align: center;
   letter-spacing: 0.06em;
 }
-.section-subtittle {
-  color: var(--titled-text-color);
-}
+
 .section-discover .section-subtittle {
   font-size: 14px;
   font-weight: 700;
   line-height: 16px;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+  color: var(--titled-text-color);
 }
 .section-discover p {
   font-weight: 400;
@@ -111,7 +110,14 @@ ul {
   line-height: 24px;
   letter-spacing: 0.03em;
 }
-
+.section-solution .section-tittle {
+  color: var(--titled-text-color);
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 42px;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
 .section-team {
   background-color: var(--background-color-team);
 }
@@ -129,6 +135,7 @@ ul {
   line-height: 19px;
   text-align: center;
   letter-spacing: 0.03em;
+  color: var(--titled-text-color);
 }
 .section-team p {
   font-weight: 400;
