@@ -10,11 +10,17 @@
 
 body {
   color: var(--primary-text-color);
+  font-family: Roboto;
 }
 
 .logo-header {
   color: #000000;
+  font-weight: 700;
   text-decoration: none;
+  font-family: Raleway;
+  font-size: 26px;
+  line-height: 31px;
+  letter-spacing: 0.03em;
 }
 .web {
   color: var(--accent-color);
@@ -23,18 +29,13 @@ body {
   background-color: var(--background-color-main);
 }
 .section-main .header {
-  /* Ефективні рішення для вашого бізнесу */
-
   font-style: normal;
   font-weight: 900;
   font-size: 44px;
   line-height: 60px;
-  /* or 136% */
-
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-
   color: #ffffff;
 }
 ul {
@@ -47,6 +48,10 @@ ul {
 .site-nav .link {
   color: var(--titled-text-color);
   text-decoration: none;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.02em;
 }
 .site-nav .link:hover,
 .site-nav .link:focus {
@@ -58,26 +63,90 @@ ul {
 .contact-nav a {
   text-decoration: none;
   color: var(--primary-text-color);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.02em;
 }
 .contact-nav a:hover,
 .contact-nav a:focus {
   color: var(--accent-color);
 }
-.section-tittle {
+/* .section-tittle {
   color: var(--titled-text-color);
+} */
+.section-main .header {
+  font-style: normal;
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 60px;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+.section-main button {
+  background-color: var(--accent-color);
+  color: white;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 30px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
 }
 .section-subtittle {
   color: var(--titled-text-color);
 }
+.section-discover .section-subtittle {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+.section-discover p {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+}
 
 .section-team {
   background-color: var(--background-color-team);
+}
+.section-team .section-tittle {
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 42px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--titled-text-color);
+}
+.section-team .section-subtittle {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+.section-team p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  letter-spacing: 0.03em;
 }
 footer {
   background-color: var(--titled-text-color);
 }
 
 .logo-footer {
+  font-family: 'Raleway';
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 31px;
+  letter-spacing: 0.03em;
   color: #ffffff;
   text-decoration: none;
 }
@@ -85,13 +154,10 @@ footer {
   color: var(--accent-color);
 }
 .address a {
-  font-family: 'Roboto';
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
   line-height: 24px;
-  /* or 171% */
-
   letter-spacing: 0.03em;
   text-decoration: none;
   color: #ffffff;
@@ -102,8 +168,6 @@ footer {
   font-weight: 400;
   font-size: 14px;
   line-height: 24px;
-  /* or 171% */
-
   letter-spacing: 0.03em;
   text-decoration: none;
   color: var(--contact-details-color);
@@ -112,6 +176,11 @@ footer {
 .filter button {
   background-color: var(--background-color-team);
   color: var(--titled-text-color);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 26px;
+  text-align: center;
+  letter-spacing: 0.03em;
 }
 .filter button:hover,
 .filter button:focus {
@@ -124,7 +193,15 @@ footer {
 }
 .examples h2 {
   color: var(--background-color-main);
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 36px;
+  letter-spacing: 0.06em;
 }
 .paragraph {
   color: var(--primary-text-color);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 30px;
+  letter-spacing: 0.03em;
 }
