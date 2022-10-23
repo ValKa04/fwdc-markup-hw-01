@@ -1,45 +1,130 @@
-body {
-  color: #757575;
+:root {
+  --primary-text-color: #757575;
+  --titled-text-color: #212121;
+  --accent-color: #2196f3;
+  --background-color-main: #2f303a;
+  --background-color-solution-discover: #f5f5f5;
+  --background-color-team: #f5f4fa;
+  --contact-details-color: rgba(255, 255, 255, 0.6);
 }
-.logo {
+
+body {
+  color: var(--primary-text-color);
+}
+
+.logo-header {
   color: #000000;
   text-decoration: none;
 }
 .web {
-  color: #2196f3;
+  color: var(--accent-color);
+}
+.section-main {
+  background-color: var(--background-color-main);
+}
+.section-main .header {
+  /* Ефективні рішення для вашого бізнесу */
+
+  font-style: normal;
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 60px;
+  /* or 136% */
+
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+
+  color: #ffffff;
 }
 ul {
   list-style: none;
 }
+.section-solution,
+.section-discover {
+  background-color: var(--background-color-solution-discover);
+}
 .site-nav .link {
-  color: #212121;
+  color: var(--titled-text-color);
   text-decoration: none;
 }
 .site-nav .link:hover,
 .site-nav .link:focus {
-  color: #2196f3;
+  color: var(--accent-color);
+}
+.site-nav .link.current {
+  color: var(--accent-color);
 }
 .contact-nav a {
   text-decoration: none;
-  color: #757575;
+  color: var(--primary-text-color);
 }
 .contact-nav a:hover,
 .contact-nav a:focus {
-  color: #2196f3;
+  color: var(--accent-color);
 }
 .section-tittle {
-  color: #212121;
+  color: var(--titled-text-color);
 }
 .section-subtittle {
-  color: #212121;
+  color: var(--titled-text-color);
 }
-.section-main {
-  background-color: #2f303a;
-  color: white;
-}
+
 .section-team {
-  background-color: #f5f4fa;
+  background-color: var(--background-color-team);
 }
 footer {
-  background-color: #2f303a;
+  background-color: var(--titled-text-color);
+}
+
+.logo-footer {
+  color: #ffffff;
+  text-decoration: none;
+}
+.web-footer {
+  color: var(--accent-color);
+}
+.address a {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  /* or 171% */
+
+  letter-spacing: 0.03em;
+  text-decoration: none;
+  color: #ffffff;
+}
+.mail a,
+.phone a {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  /* or 171% */
+
+  letter-spacing: 0.03em;
+  text-decoration: none;
+  color: var(--contact-details-color);
+}
+/* css portfolio */
+.filter button {
+  background-color: var(--background-color-team);
+  color: var(--titled-text-color);
+}
+.filter button:hover,
+.filter button:focus {
+  background-color: var(--accent-color);
+  color: white;
+  cursor: pointer;
+}
+.examples a {
+  text-decoration: none;
+}
+.examples h2 {
+  color: var(--background-color-main);
+}
+.paragraph {
+  color: var(--primary-text-color);
 }
