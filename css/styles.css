@@ -26,6 +26,24 @@ body {
   letter-spacing: 0.03em;
 }
 
+.container{
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+.header-position{
+    display: flex;
+    align-items: center;
+}
 .logo-header {
   color: #000000;
   font-weight: 700;
@@ -33,27 +51,21 @@ body {
   font-family: 'Raleway', sans-serif;
   font-size: 26px;
   line-height: 1.19;
+
+  display: block;
+  margin-right: 93px;
+  
 }
 .web {
   color: var(--accent-color);
 }
-.section-main {
-  background-color: var(--background-color-main);
+
+.site-nav {
+    display: flex;
 }
-.section-main .header {
-  font-style: normal;
-  font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
-  text-align: center;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
-  color: #ffffff;
-}
-ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
+
+.site-nav .item:not(:last-child){
+    margin-right: 50px;
 }
 
 .site-nav .link {
@@ -62,6 +74,10 @@ ul {
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
+
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 .site-nav .link:hover,
 .site-nav .link:focus {
@@ -70,34 +86,57 @@ ul {
 .site-nav .link.current {
   color: var(--accent-color);
 }
+
+.contact-nav{
+    display: flex;
+    margin-left: auto;
+}
+
 .contact-nav a {
   text-decoration: none;
   color: var(--primary-text-color);
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
+
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
+
+.contact-nav .item:not(:last-child){
+    margin-right: 50px;
+}
+
 .contact-nav a:hover,
 .contact-nav a:focus {
   color: var(--accent-color);
 }
+
+
 /* .section-tittle {
   color: var(--titled-text-color);
 } */
-.section-main {
-  text-align: center;
-}
-.section-main .header {
-  font-style: normal;
-  font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
 
-  margin-top: 0;
-  margin-bottom: 30px;
-}
+
+.section-main {
+    text-align: center;
+    background-color: var(--background-color-main);
+  }
+  .section-main .header {
+    font-style: normal;
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: #ffffff;
+
+    margin-top: 0;
+    margin-bottom: 30px;
+  }
+
 .section-main button {
   background-color: white;
   color: black;
