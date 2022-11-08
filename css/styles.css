@@ -110,7 +110,8 @@ ul {
   line-height: 1.14;
   letter-spacing: 0.02em;
 
-  display: block;
+  display: inline-flex;
+  align-items: center;
   padding-top: 32px;
   padding-bottom: 32px;
 }
@@ -119,11 +120,19 @@ ul {
   margin-right: 50px;
 }
 
-.contact-nav a:hover,
-.contact-nav a:focus {
-  color: var(--accent-color);
+.contact-icon{
+  margin-right: 10px;
+  fill: currentColor;;
 }
+/* .contact-icon:hover{
 
+} */
+
+.contact-nav  a:hover,
+.contact-nav  a:focus {
+  color: var(--accent-color);
+  fill: var(--accent-color);
+}
 
 .section-main {
   text-align: center;
@@ -323,6 +332,13 @@ ul {
   margin-top: 0;
   margin-bottom: 30px;
 }
+.team-social{
+  display: inline-flex;
+}
+.icon-social{
+  fill: black;
+}
+
 footer {
   background-color: var(--footer-background-color);
   padding-top: 60px;
@@ -467,3 +483,4 @@ footer {
   margin-left: 24px;
   margin-bottom: 20px;
 }
+
