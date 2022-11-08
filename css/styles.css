@@ -283,6 +283,8 @@ ul {
   margin-top: 0;
 }
 
+/* /////////////SECTION TEAM ////////////*/
+
 .team-members{
   display: flex;
 }
@@ -319,8 +321,7 @@ ul {
   line-height: 1.19;
   text-align: center;
   color: var(--titled-text-color);
-
-  margin-top: 30;
+  margin-top: 0;
   margin-bottom: 10px;
 }
 
@@ -332,12 +333,37 @@ ul {
   margin-top: 0;
   margin-bottom: 30px;
 }
+.team-workers{
+  padding: 30px 0px;
+}
 .team-social{
-  display: inline-flex;
+  display: flex;
+  padding: 0px 32px;
+  margin-top: 16px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.item-social a{
+  width: 44px;
+  height: 44px;
+  display: block;
+  border-radius: 50%;
+  color: #afb1b8;
+  background-color: #f5f4fa;
+}
+
+.item-social a:hover,
+.item-social a:focus{
+  color: #ffffff;
+  background-color: var(--accent-color);
 }
 .icon-social{
-  fill: black;
+  margin: 12px 0px 0px 12px;
+  fill: currentColor;
 }
+
+/* /////////FOOTER///////// */
 
 footer {
   background-color: var(--footer-background-color);
