@@ -62,7 +62,7 @@
       Effective solutions <br />
       for your business
        </h1>
-       <button type="button">Get in touch</button>
+       <button type="button" data-open-modal>Get in touch</button>
       </div>
       </section>
 
@@ -104,27 +104,26 @@
           <h2 class="section-tittle">Solutions</h2>
           <ul class="solutions">
             <li class="item">
-              <a href="./">
-                <img src="./images/img1.jpg" alt="programer working his desk office" width="370" />
-              </a>
+                <img src="./images/img1.jpg" 
+                alt="programer working his desk office" 
+                width="370" />
+                 <p class="solution-text">Desktop Apps</p>
             </li>
             <li class="item">
-              <a href="./">
                 <img
-                  src="./images/img2.jpg"
-                  alt="ui designers are developing application"
-                  width="370"
-                />
-              </a>
+                src="./images/img2.jpg"
+                alt="ui designers are developing application"
+                width="370"
+              />
+                <p class="solution-text">Mobile Apps</p>
             </li>
             <li class="item">
-              <a href="./">
                 <img
-                  src="./images/img3.jpg"
-                  alt="web designer working with colour selection graphic tablet"
-                  width="370"
-                />
-              </a>
+                src="./images/img3.jpg"
+                alt="web designer working with colour selection graphic tablet"
+                width="370"
+              />
+                 <p class="solution-text">UI/UX Solutions</p>
             </li>
           </ul>
         </div>
@@ -359,7 +358,7 @@
           </address>
         </div>
         <div class="footer-social">
-          <h2>Join us</h2>
+          <h2>Follow us</h2>
           <ul class="footer-icons">
             <li class="item">
               <a href="">
@@ -393,6 +392,41 @@
         </div>
       </div>
     </footer>
+    <div class="backdrop is-hidden" data-backdrop>
+      <div class="modal">
+        <button type="button" class="button-modal" data-close-modal>close</button>
+      </div>
+    </div>
+    <script>
 
+   // JS for the fixed header
+
+    const{ height: pageHeaderHeight}=document
+    .querySelector(".header-border")
+    .getBoundingClientRect();
+
+    document.body.style.paddingTop = `${pageHeaderHeight}px`;
+
+    // JS for the modal window
+
+    const refs = {
+      openModalBtn: document.querySelector("[data-open-modal]"),
+      closeModalBtn: document.querySelector("[data-close-modal]"),
+      backdrop: document.querySelector("[data-backdrop]"),
+    };
+
+    refs.openModalBtn.addEventListener("click", toggleModal)
+    refs.closeModalBtn.addEventListener("click", toggleModal);
+
+    refs.backdrop.addEventListener("click", logBackdropClick);
+
+    function toggleModal() {
+      refs.backdrop.classList.toggle("is-hidden")
+    }
+
+    function logBackdropClick(){
+      console.log("it's click")
+    }
+    </script>
   </body>
 </html>
