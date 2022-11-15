@@ -26,3 +26,19 @@ function toggleModal() {
 function logBackdropClick(){
   console.log("it's click")
 }
+
+// JS FORM
+
+(() => {
+  document
+  .querySelector('.contact-form')
+  .addEventListener('submit', e=> {
+    e.preventDefault();
+    new FormData(e.currentTarget).forEach((value, name) =>
+    console.log(`${name}: ${value}`),
+    );
+    
+// auto reset after submition ( btn "submit")
+    e.currentTarget.reset();
+  });
+})();

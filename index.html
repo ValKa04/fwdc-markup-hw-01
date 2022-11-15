@@ -399,6 +399,36 @@
             <use href="./images/symbol-defs.svg#icon-icon-modal"></use>
           </svg>
         </button>
+        <form class="form contact-form">
+          <legend class="form-header">Fill out this form, and we will contact you.</legend>
+
+          <div class="form-field">
+          <label for="name" class="field-header">Name</label>
+          <input type="text" name="name" id="name" />
+          </div>
+
+          <div class="form-field">
+          <label for="tel"class="field-header" >Telephone</label>
+          <input type="tel" name="tel" id="tel" />
+          </div>
+
+          <div class="form-field">
+            <label for="mail" class="field-header">Email</label>
+            <input type="email" name="email" id="email" />
+          </div>
+
+          <div class="form-field">
+            <label for="comment" class="field-header">Comment</label>
+            <textarea name="comment" id="comment" rows="8" placeholder="Type text" ></textarea>  
+          </div>
+
+          <div class="policy-field">
+            <input type="checkbox" name="policy" value="policy" id="policy"/>
+            <label for="policy" >I agree with <span><a href="">terms and conditions</a></span> </label>  
+          </div>
+
+          <button type="submit" class="form-button">Submit</button>
+        </form>
       </div>
     </div>
     <script src="./js/modal.js">
