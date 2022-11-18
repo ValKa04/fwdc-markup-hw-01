@@ -392,6 +392,8 @@
         </div>
       </div>
     </footer>
+
+
     <div class="backdrop is-hidden" data-backdrop>
       <div class="modal">
         <button type="button" class="button-modal" data-close-modal>
@@ -400,32 +402,49 @@
           </svg>
         </button>
         <form class="form contact-form">
-          <legend class="form-header">Fill out this form, and we will contact you.</legend>
+          <h2 class="form-header">Fill out this form, and we will contact you.</h2>
 
           <div class="form-field">
           <label for="name" class="field-header">Name</label>
-          <input type="text" name="name" id="name" />
+          <input type="text" name="name" id="name" class="form-input"/>
+          <svg class="form-icon" width="18" height="18">
+            <use href="./images/symbol-defs.svg#icon-person"></use>
+          </svg>
           </div>
 
           <div class="form-field">
           <label for="tel"class="field-header" >Telephone</label>
-          <input type="tel" name="tel" id="tel" />
+          <input type="tel" name="tel" id="tel" class="form-input"/>
+          <svg class="form-icon" width="18" height="18">
+            <use href="./images/symbol-defs.svg#icon-phone"></use>
+          </svg>
           </div>
 
           <div class="form-field">
             <label for="mail" class="field-header">Email</label>
-            <input type="email" name="email" id="email" />
+            <input type="email" name="email" id="email" class="form-input"/>
+            <svg class="form-icon" width="18" height="18">
+              <use href="./images/symbol-defs.svg#icon-email"></use>
+            </svg>
           </div>
 
           <div class="form-field">
             <label for="comment" class="field-header">Comment</label>
-            <textarea name="comment" id="comment" rows="8" placeholder="Type text" ></textarea>  
+            <textarea class="comment" name="comment" id="comment" rows="6" placeholder="Type text" ></textarea>  
           </div>
 
-          <div class="policy-field">
-            <input type="checkbox" name="policy" value="policy" id="policy"/>
-            <label for="policy" >I agree with <span><a href="">terms and conditions</a></span> </label>  
+          <div class="form-field-check">
+              
+            <label class="policy-label" for="policy"></a> 
+              <input class="form-checkbox" type="checkbox" name="policy" id="policy">
+              <span class="icon-check"></span>
+              I agree with <a class="policy-link" href="">terms and conditions</a>
+            </label>
+            
+            
           </div>
+
+
 
           <button type="submit" class="form-button">Submit</button>
         </form>
