@@ -1,7 +1,7 @@
 // JS for the fixed header
 
 const{ height: pageHeaderHeight}=document
-.querySelector(".header-border")
+.querySelector(".site-header")
 .getBoundingClientRect();
 
 document.body.style.paddingTop = `${pageHeaderHeight}px`;
