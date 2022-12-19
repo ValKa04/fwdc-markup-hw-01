@@ -24,11 +24,11 @@
   <body>
     <header class="site-header">
       <div class="container site-header__position">
-        <a href="./index.html" class="logo"> <span class="logo--accent">Web</span>Studio</a>
+        <a href="./index.html" class="logo site-heder__logo"> <span class="logo__accent">Web</span>Studio</a>
         <nav class="site-nav">
-          <ul class="site-nav--list">
-            <li class="site-nav__item"><a href="./index.html" class="site-nav__link site-nav__link--current">Studio</a></li>
-            <li class="site-nav__item"><a href="./portfolio.html" class="site-nav__link">Portfolio</a></li>
+          <ul class="site-nav__list">
+            <li class="site-nav__item"><a href="./index.html" class="site-nav__link">Studio</a></li>
+            <li class="site-nav__item"><a href="./portfolio.html" class="site-nav__link site-nav__link--current">Portfolio</a></li>
             <li class="site-nav__item"><a href="" class="site-nav__link">Contacts</a></li>
           </ul>
         </nav>
@@ -56,188 +56,199 @@
 
     </header>
     <main>
-      <section class="section-portfolio">
+      <section class="portfolio">
         <div class="container">
-          <ul class="filter">
-            <li class="active item"><button type="button">All</button></li>
-            <li class="item"><button type="button">Web-Site</button></li>
-            <li class="item"><button type="button">Apps</button></li>
-            <li class="item"><button type="button">Design</button></li>
-            <li class="item"><button type="button">Marketing</button></li>
+          <ul class="portfolio-filter">
+            <li class="portfolio-filter__item">
+              <button class="portfolio-filter__button portfolio-filter__button--active" type="button">All</button></li>
+            <li class="portfolio-filter__item">
+              <button class="portfolio-filter__button" type="button">Web-Site</button></li>
+            <li class="portfolio-filter__item">
+              <button class="portfolio-filter__button" type="button">Apps</button></li>
+            <li class="portfolio-filter__item">
+              <button class="portfolio-filter__button" type="button">Design</button></li>
+            <li class="portfolio-filter__item">
+              <button class="portfolio-filter__button" type="button">Marketing</button></li>
           </ul>
-          <ul class="examples">
-            <li class="item">
-              <a href="" class="portfolio-link">
-                <div class="portfolio-thumb">
+          <ul class="portfolio-cards">
+            <li class="portfolio-cards__item">
+              <a class="portfolio-cards__link" href="" >
+                <div class="portfolio-cards__thumb">
                   <img src="./images/img01.jpg" alt="web site page sample" width="100%" />
-                  <div class="portfolio-overlay">
-                    <p class="overlay-text">Stand with Ukraine.🇺🇦 Be brave as Ukraine.🇺🇦 Support Ukraine.🇺🇦 Stand with Ukraine.🇺🇦 Be brave as Ukraine.🇺🇦 Support Ukraine.🇺🇦 Stand with Ukraine.🇺🇦 Be brave as Ukraine.🇺🇦 </p>
+                  <div class="portfolio-cards__overlay">
+                    <p class="portfolio-cards__text">Stand with Ukraine.🇺🇦 Be brave as Ukraine.🇺🇦 Support Ukraine.🇺🇦 Stand with Ukraine.🇺🇦 Be brave as Ukraine.🇺🇦 Support Ukraine.🇺🇦 Stand with Ukraine.🇺🇦 Be brave as Ukraine.🇺🇦 </p>
                   </div>
                 </div>
-                <h2>Techpark</h2>
-                <p class="paragraph">Web-Site</p>
+                <h2 class="portfolio-cards__tittle">Techpark</h2>
+                <p class="portfolio-cards__subtittle">Web-Site</p>
               </a>
             </li>
-            <li class="item">
-              <a href="" class="portfolio-link">
-                <div class="portfolio-thumb">
+            <li class="portfolio-cards__item">
+              <a class="portfolio-cards__link" href="" >
+                <div class="portfolio-cards__thumb">
                   <img src="./images/img02.jpg" alt="two basketball players " width="100%" />
-                  <div class="portfolio-overlay">
-                      <p class="overlay-text">Stand with Ukraine.🇺🇦 Be brave as Ukraine.🇺🇦 Support Ukraine.🇺🇦 Stand with Ukraine.🇺🇦 Be brave as Ukraine.🇺🇦 Support Ukraine.🇺🇦 Stand with Ukraine.🇺🇦 Be brave as Ukraine.🇺🇦 </p>
+                  <div class="portfolio-cards__overlay">
+                      <p class="portfolio-cards__text">Stand with Ukraine.🇺🇦 Be brave as Ukraine.🇺🇦 Support Ukraine.🇺🇦 Stand with Ukraine.🇺🇦 Be brave as Ukraine.🇺🇦 Support Ukraine.🇺🇦 Stand with Ukraine.🇺🇦 Be brave as Ukraine.🇺🇦 </p>
                    </div>
                 </div>
-                <h2>Poster New Orlean vs Golden Star</h2>
-                <p class="paragraph">Design</p>
+                <h2 class="portfolio-cards__tittle">Poster New Orlean vs Golden Star</h2>
+                <p class="portfolio-cards__subtittle">Design</p>
               </a>
             </li>
-            <li class="item">
-              <a href="" class="portfolio-link">
-                <div class="portfolio-thumb">
+            <li class="portfolio-cards__item">
+              <a class="portfolio-cards__link" href="" >
+                <div class="portfolio-cards__thumb">
                   <img src="./images/img03.jpg" alt="Seafood restaurant logo" width="100%" />
-                  <div class="portfolio-overlay">
-                    <p class="overlay-text">Stand with Ukraine.🇺🇦 Be brave as Ukraine.🇺🇦 Support Ukraine.🇺🇦 Stand with Ukraine.🇺🇦 Be brave as Ukraine.🇺🇦 Support Ukraine.🇺🇦 Stand with Ukraine.🇺🇦 Be brave as Ukraine.🇺🇦 </p>
+                  <div class="portfolio-cards__overlay">
+                    <p class="portfolio-cards__text">Stand with Ukraine.🇺🇦 Be brave as Ukraine.🇺🇦 Support Ukraine.🇺🇦 Stand with Ukraine.🇺🇦 Be brave as Ukraine.🇺🇦 Support Ukraine.🇺🇦 Stand with Ukraine.🇺🇦 Be brave as Ukraine.🇺🇦 </p>
                   </div>
                 </div>
-                <h2>Restaurant SeaFood</h2>
-                <p class="paragraph">App</p>
+                <h2 class="portfolio-cards__tittle">Restaurant SeaFood</h2>
+                <p class="portfolio-cards__subtittle">App</p>
               </a>
             </li>
-            <li class="item">
-              <a href="" class="portfolio-link">
-                <div class="portfolio-thumb">
+            <li class="portfolio-cards__item">
+              <a href="" class="portfolio-cards__link">
+                <div class="portfolio-cards__thumb">
                   <img src="./images/img04.jpg" alt="headphone" width="100%" />
-                  <div class="portfolio-overlay">
-                    <p class="overlay-text">Stand with Ukraine.🇺🇦 Be brave as Ukraine.🇺🇦 Support Ukraine.🇺🇦 Stand with Ukraine.🇺🇦 Be brave as Ukraine.🇺🇦 Support Ukraine.🇺🇦 Stand with Ukraine.🇺🇦 Be brave as Ukraine.🇺🇦 </p>
+                  <div class="portfolio-cards__overlay">
+                    <p class="portfolio-cards__text">Stand with Ukraine.🇺🇦 Be brave as Ukraine.🇺🇦 Support Ukraine.🇺🇦 Stand with Ukraine.🇺🇦 Be brave as Ukraine.🇺🇦 Support Ukraine.🇺🇦 Stand with Ukraine.🇺🇦 Be brave as Ukraine.🇺🇦 </p>
                   </div>
                 </div>
-                <h2>Project Prime</h2>
-                <p class="paragraph">Marketing</p>
+                <h2 class="portfolio-cards__tittle">Project Prime</h2>
+                <p class="portfolio-cards__subtittle">Marketing</p>
               </a>
             </li>
-            <li class="item">
-              <a href="" class="portfolio-link">
-                <div class="portfolio-thumb">
+            <li class="portfolio-cards__item">
+              <a href="" class="portfolio-cards__link">
+                <div class="portfolio-cards__thumb">
                   <img src="./images/img05.jpg" alt="Two cardboard boxes" width="100%" />
-                  <div class="portfolio-overlay">
-                    <p class="overlay-text">Stand with Ukraine.🇺🇦 Be brave as Ukraine.🇺🇦 Support Ukraine.🇺🇦 Stand with Ukraine.🇺🇦 Be brave as Ukraine.🇺🇦 Support Ukraine.🇺🇦 Stand with Ukraine.🇺🇦 Be brave as Ukraine.🇺🇦 </p>
+                  <div class="portfolio-cards__overlay">
+                    <p class="portfolio-cartds__text">Stand with Ukraine.🇺🇦 Be brave as Ukraine.🇺🇦 Support Ukraine.🇺🇦 Stand with Ukraine.🇺🇦 Be brave as Ukraine.🇺🇦 Support Ukraine.🇺🇦 Stand with Ukraine.🇺🇦 Be brave as Ukraine.🇺🇦 </p>
                   </div>
                 </div>
-                <h2>Project Boxes</h2>
-                <p class="paragraph">App</p>
+                <h2 class="portfolio-cards__tittle">Project Boxes</h2>
+                <p class="portfolio-cards__subtittle">App</p>
               </a>
             </li>
-            <li class="item">
-              <a href="" class="portfolio-link">
-                <div class="portfolio-thumb">
+            <li class="portfolio-cards__titem">
+              <a href="" class="portfolio-cards__link">
+                <div class="portfolio-cards__thumb">
                   <img src="./images/img06.jpg" alt="Computer's screen" width="100%" />
-                  <div class="portfolio-overlay">
-                    <p class="overlay-text">Stand with Ukraine.🇺🇦 Be brave as Ukraine.🇺🇦 Support Ukraine.🇺🇦 Stand with Ukraine.🇺🇦 Be brave as Ukraine.🇺🇦 Support Ukraine.🇺🇦 Stand with Ukraine.🇺🇦 Be brave as Ukraine.🇺🇦 </p>
+                  <div class="portfolio-cards__overlay">
+                    <p class="portfolio-cards__text">Stand with Ukraine.🇺🇦 Be brave as Ukraine.🇺🇦 Support Ukraine.🇺🇦 Stand with Ukraine.🇺🇦 Be brave as Ukraine.🇺🇦 Support Ukraine.🇺🇦 Stand with Ukraine.🇺🇦 Be brave as Ukraine.🇺🇦 </p>
                   </div>
                 </div>
-                <h2>Inspiration has no Borders</h2>
-                <p class="paragraph">Web-Site</p>
+                <h2 class="portfolio-cards__tittle">Inspiration has no Borders</h2>
+                <p class="portfolio-cards__subtittle">Web-Site</p>
               </a>
             </li>
-            <li class="item">
-              <a href="" class="portfolio-link">
-                <div class="portfolio-thumb">
+            <li class="portfolio-cards__item">
+              <a href="" class="portfolio-cartds__link">
+                <div class="portfolio-cards__thumb">
                   <img src="./images/img07.jpg" alt="Article in a magazine" width="100%" />
-                  <div class="portfolio-overlay">
-                    <p class="overlay-text">Stand with Ukraine.🇺🇦 Be brave as Ukraine.🇺🇦 Support Ukraine.🇺🇦 Stand with Ukraine.🇺🇦 Be brave as Ukraine.🇺🇦 Support Ukraine.🇺🇦 Stand with Ukraine.🇺🇦 Be brave as Ukraine.🇺🇦 </p>
+                  <div class="portfolio-cards__overlay">
+                    <p class="portfolio-cards__text">Stand with Ukraine.🇺🇦 Be brave as Ukraine.🇺🇦 Support Ukraine.🇺🇦 Stand with Ukraine.🇺🇦 Be brave as Ukraine.🇺🇦 Support Ukraine.🇺🇦 Stand with Ukraine.🇺🇦 Be brave as Ukraine.🇺🇦 </p>
                   </div>
                 </div>
-                <h2>Publication Limited Edition</h2>
-                <p class="paragraph">Design</p>
+                <h2 class="portfolio-cards__tittle">Publication Limited Edition</h2>
+                <p class="portfolio-cards__subtittle">Design</p>
               </a>
             </li>
-            <li class="item">
-              <a href="" class="portfolio-link">
-                <div class="portfolio-thumb">
+            <li class="portfolio-cards__item">
+              <a href="" class="portfolio-cards__link">
+                <div class="portfolio-cards__thumb">
                   <img src="./images/img08.jpg" alt="tag" width="100%" />
-                  <div class="portfolio-overlay">
-                    <p class="overlay-text">Stand with Ukraine.🇺🇦 Be brave as Ukraine.🇺🇦 Support Ukraine.🇺🇦 Stand with Ukraine.🇺🇦 Be brave as Ukraine.🇺🇦 Support Ukraine.🇺🇦 Stand with Ukraine.🇺🇦 Be brave as Ukraine.🇺🇦 </p>
+                  <div class="portfolio-cards__overlay">
+                    <p class="portfolio-cards__text">Stand with Ukraine.🇺🇦 Be brave as Ukraine.🇺🇦 Support Ukraine.🇺🇦 Stand with Ukraine.🇺🇦 Be brave as Ukraine.🇺🇦 Support Ukraine.🇺🇦 Stand with Ukraine.🇺🇦 Be brave as Ukraine.🇺🇦 </p>
                   </div>
                 </div>
-                <h2>Project LAB</h2>
-                <p class="paragraph">Marketing</p>
+                <h2 class="portfolio-cards__tittle">Project LAB</h2>
+                <p class="portfolio-cards__subtittle">Marketing</p>
               </a>
             </li>
-            <li class="item">
-              <a href="" class="portfolio-link">
-                <div class="portfolio-thumb">
+            <li class="portfolio-cards__item">
+              <a href="" class="portfolio-cards__link">
+                <div class="portfolio-cards__thumb">
                   <img
                   src="./images/img09.jpg"
                   alt="Two hands typing on a keyboard of laptop"
                   width="100%"
                 />
-                <div class="portfolio-overlay">
+                <div class="portfolio-cards__overlay">
                 </div>
-                  <p class="overlay-text">Stand with Ukraine.🇺🇦 Be brave as Ukraine.🇺🇦 Support Ukraine.🇺🇦 Stand with Ukraine.🇺🇦 Be brave as Ukraine.🇺🇦 Support Ukraine.🇺🇦 Stand with Ukraine.🇺🇦 Be brave as Ukraine.🇺🇦 </p>
+                  <p class="portfolio-cards__text">Stand with Ukraine.🇺🇦 Be brave as Ukraine.🇺🇦 Support Ukraine.🇺🇦 Stand with Ukraine.🇺🇦 Be brave as Ukraine.🇺🇦 Support Ukraine.🇺🇦 Stand with Ukraine.🇺🇦 Be brave as Ukraine.🇺🇦 </p>
                 </div>
-                <h2>Growing Business</h2>
-                <p class="paragraph">App</p>
+                <h2 class="portfolio-cards__tittle">Growing Business</h2>
+                <p class="portfolio-cards__subtittle">App</p>
               </a>
             </li>
           </ul>
         </div>
       </section>
     </main>
-    <footer>
-      <div class="container footer-flex">
-        <div class="footer-position">
-          <a href="./index.html" class="logo-footer"> <span class="web-footer">Web</span>Studio</a>
+    <footer class="footer">
+      <div class="container footer__container">
+        <div class="footer__nav">
+          <a href="./index.html" class="lofo footer__logo"> <span class="logo__accent">Web</span>Studio</a>
           <address>
-            <ul class="address-items">
-              <li class="address item">
-                <a
+            <ul class="footer-contacts">
+              <li class="footer-contacts__item">
+                <a class="footer-contacts__link footer-contacts__link--address"
                   href="https://www.google.com/maps/place/бул.+Леси+Украинки,+26,+Киев,+02000/@50.4265807,30.5361971,17z/data=!3m1!4b1!4m5!3m4!1s0x40d4cf0e033ecbe9:0x57a4dffefec77da0!8m2!3d50.4265807!4d30.5383858"
                   >Kyiv, Lesi Ukrainki Avenue, 26</a
                 >
               </li>
-              <li class="mail item"><a href="malito:info@devstudio.com">info@devstudio.com</a></li>
-              <li class="phone item"><a href="tel:+380961111111">+38 096 111 11 11</a></li>
+              <li class="footer-contacts__item"><a class="footer-contacts__link"
+                href="malito:info@devstudio.com">info@devstudio.com</a></li>
+              <li class="footer-contacts__item"><a class="footer-contacts__link"
+                href="tel:+380961111111">+38 096 111 11 11</a></li>
             </ul>
           </address>
         </div>
-        <div class="footer-social">
-          <h2>Follow us</h2>
-          <ul class="footer-icons">
-            <li class="item">
-              <a href="">
-                <svg class="social-icon" width="20" height="20">
+        <div class="footer__social-section social-section">
+          <h2 class="social-section__header">Follow us</h2>
+          <ul class="social-section__list">
+            <li class="social-section__item">
+              <a class="social-section__link"
+               href="">
+                <svg class="social-section__icon" width="20" height="20">
                   <use href="./images/symbol-defs.svg#icon-instagram"></use>
                 </svg>
               </a>
             </li>
-            <li class="item">
-              <a href="">
-                <svg class="social-icon" width="20" height="20">
+            <li class="social-section__item">
+              <a class="social-section__link"
+              href="">
+                <svg class="social-section__icon" width="20" height="20">
                   <use href="./images/symbol-defs.svg#icon-twitter"></use>
                 </svg>
               </a>
             </li>
-            <li class="item">
-              <a href="">
-                <svg class="social-icon" width="20" height="20">
+            <li class="social-section__item">
+              <a 
+              class="social-section__link"href="">
+                <svg class="social-section__icon" width="20" height="20">
                   <use href="./images/symbol-defs.svg#icon-facebook"></use>
                 </svg>
               </a>
             </li>
-            <li class="item">
-              <a href="">
-                <svg class="social-icon" width="20" height="20">
+            <li class="social-section__item">
+              <a h
+              class="social-section__link"ref="">
+                <svg class="social-section__icon" width="20" height="20">
                   <use href="./images/symbol-defs.svg#icon-linkedin"></use>
                 </svg>
               </a>
             </li>
           </ul>
         </div>
-        <div class="footer-submit">
-          <h2>Subscribe to our newsletter</h2>
-            <label for="subscribe"></label>
-            <input type="email" name="email" id="email-footer" class="footer-input"  placeholder="E-mail">
-          <button type="button"  class="button-subscribe">Subscribe
-            <svg class="icon-subscribe" width="24" height="24">
+        <div class="footer__subscribtion subscription">
+          <h2 class="subscription__header">Subscribe to our newsletter</h2>
+            <label class="subscription__label" for="subscribe"></label>
+            <input class="subscription__input" type="email" name="email" id="email-footer"   placeholder="E-mail">
+          <button type="submit"  class="subscription__button">Subscribe
+            <svg class="subscription__icon" width="24" height="24">
               <use href="./images/symbol-defs.svg#icon-subscribe"></use>
             </svg>
           </button>
