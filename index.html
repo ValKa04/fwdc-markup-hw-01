@@ -22,7 +22,7 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/main.min.css" />
   </head>
   <body>
     <header class="site-header">
@@ -67,7 +67,7 @@
       Effective solutions <br />
       for your business
        </h1>
-       <button class="hero__button" type="button" data-open-modal>Get in touch</button>
+       <button class="hero__button" type="button" data-modal-open>Get in touch</button>
       </div>
       </section>
 
@@ -405,7 +405,7 @@
           <h2 class="subscription__header">Subscribe to our newsletter</h2>
             <label class="subscription__label" for="subscribe"></label>
             <input class="subscription__input" type="email" name="email" id="email-footer"   placeholder="E-mail">
-          <button type="submit"  class="subscription__button">Subscribe
+          <button type="button"  class="subscription__button">Subscribe
             <svg class="subscription__icon" width="24" height="24">
               <use href="./images/symbol-defs.svg#icon-subscribe"></use>
             </svg>
@@ -415,9 +415,9 @@
     </footer>
 
 
-    <div class="backdrop is-hidden" data-backdrop>
+    <div class="backdrop is-hidden" data-modal>
       <div class="modal">
-        <button type="button" class="modal__close" data-close-modal>
+        <button type="button" class="modal__close" data-modal-close>
           <svg width="11" height="11" class="modal__icon">
             <use href="./images/symbol-defs.svg#icon-icon-modal"></use>
           </svg>

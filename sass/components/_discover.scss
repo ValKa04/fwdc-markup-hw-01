@@ -1,0 +1,58 @@
+.discover{
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+  
+  .discover-list{
+    display: flex;
+    justify-content:space-evenly;
+  }
+  
+  .discover-list__item:not(:last-child){
+    margin-right: 30px;
+  }
+  .discover-list__item{
+    width: 270px;
+  }
+  
+  .discover-list__item::before{
+    display: block;
+    content: "";
+    height: 120px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: var(--background-color-team);
+    border-radius: 4px;
+    background-size: 70px 70px;
+  }
+  
+  .discover-list__item:nth-child(1)::before{
+    background-image: url(../images/antenna.svg);
+  }
+  
+  .discover-list__item:nth-child(2)::before{
+    background-image: url(../images/clock.svg);
+  }
+  
+  .discover-list__item:nth-child(3)::before{
+    background-image: url(../images/diagram.svg);
+  }
+  
+  .discover-list__item:nth-child(4)::before{
+    background-image: url(../images/astronaut.svg);
+  }
+  
+  .discover-list__subtittle {
+    font-weight: 700;
+    line-height: 1.14;
+    text-transform: uppercase;
+    color: var(--titled-text-color);
+  
+    margin-top: 30;
+    margin-bottom: 10px;
+  }
+  .discover-list__text {
+    line-height: 1.71;
+  
+    margin-top: 0;
+  }

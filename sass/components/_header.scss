@@ -1,0 +1,17 @@
+.site-header{
+    border-bottom: 1px solid #ECECEC;
+    background-color: var(--white-color);
+  
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    min-height: 80px;
+    display: block;
+    z-index: 1;
+  }  
+  
+  .site-header__position{
+    display: flex;
+    align-items: center;
+  }

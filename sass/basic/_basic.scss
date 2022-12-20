@@ -1,0 +1,30 @@
+html {
+    box-sizing: border-box;
+  }
+  *,
+  *::before,
+  *::after {
+    box-sizing: inherit;
+  }
+
+body {
+  background-color: var(--white-color);
+  color: var(--primary-text-color);
+  font-family: var(--main-font);
+  font-weight: 400;
+  font-size: 14px;
+  letter-spacing: 0.03em;
+
+} 
+
+h1,h2{
+    margin: 0;
+  }
+  
+ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+    
+
